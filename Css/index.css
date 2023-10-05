@@ -3,6 +3,16 @@
     margin: 0;
 }
 
+@font-face {
+    font-family: "titilium web";
+    src: url(../Assets/Fonts/TitilliumWeb-Bold.ttf);
+}
+
+@font-face {
+    font-family: "dancing scr";
+    src: url(../Assets/Fonts/DancingScript-VariableFont_wght.ttf)
+}
+
 body {
     background-color: #E5E9FF;
 }
@@ -52,13 +62,22 @@ header {
 .title {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 25px;
     font-size: larger;
-    font-family: Inter;
-    font-size: 26px;
+    font-family: dancing scr;
+    font-size: 25px;
 }
 
-.title_h1{
+.title_h1 {
     color: #017E47;
+
+}
+
+.Image_Banners {
+    height: auto;
+    width: 10%;
+}
+
+.Container-consulta {
+    width: 80%;
+    height: 100%;
 }
