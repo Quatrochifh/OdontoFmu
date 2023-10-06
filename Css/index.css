@@ -13,6 +13,7 @@
     src: url(../Assets/Fonts/DancingScript-VariableFont_wght.ttf)
 }
 
+
 body {
     background-color: #E5E9FF;
 }
@@ -20,7 +21,28 @@ body {
 header {
     background-color: white;
     width: 100%;
-    height: 80%;
+    /* height: 10%; */
+    position: fixed;
+}
+
+.container-imagem {
+    background-image: url(../Assets/Images/Index/Medica.png);
+    height: 400px;
+    /* position: relative; */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-crono {
+    height: 65%;
+    display: flex;
+    align-items: flex-end;
 }
 
 .imagemLogo {
@@ -39,14 +61,7 @@ header {
     width: 100%;
 }
 
-.container-imagem {
-    position: relative;
-}
-
 .buttonBanner {
-    position: absolute;
-    top: 73%;
-    left: 42%;
     padding: 5px 50px;
     cursor: pointer;
     border-radius: 42px;
@@ -69,15 +84,37 @@ header {
 
 .title_h1 {
     color: #017E47;
-
+    margin-top: 1%;
 }
 
 .Image_Banners {
     height: auto;
-    width: 10%;
+    width: 100%;
 }
 
-.Container-consulta {
-    width: 80%;
-    height: 100%;
+.container_all_Semestre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_Semestre {
+    width: 76%;
+}
+
+.container-consulta {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+.lista-destaque {
+    display: grid;
+   grid-template-columns: repeat(3, 1fr);  /* Mudar conforme materias */
+    justify-items: center;
+    justify-content: space-around;
+    width: 69%;
+    gap: 45px;
+    align-content: center;
 }
