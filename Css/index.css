@@ -25,6 +25,19 @@ header {
     position: fixed;
 }
 
+
+.imagemLogo {
+    height: 55px;
+}
+
+.nav_header {
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .container-imagem {
     background-image: url(../Assets/Images/Index/Medica.png);
     height: 400px;
@@ -45,16 +58,7 @@ header {
     align-items: flex-end;
 }
 
-.imagemLogo {
-    height: 55px;
-}
 
-.nav_header {
-    height: 65px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .imagemBanner {
     height: auto;
