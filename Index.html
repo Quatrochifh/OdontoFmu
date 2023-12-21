@@ -15,16 +15,21 @@
     <div class="container-grid">
         <div class="hero">
             <!-- <iframe src="component/header.html" frameborder="0" scrolling="no" width="100%"></iframe> -->
-            <header>
-                <nav id="links" class="nav_header">
-                    <img class="imagemLogo" src="Assets/Images/Index/Logo_Principal.png" alt="Logo_Principal">
-                </nav>
-            </header>
 
+            <header>
+                <div class="container-header">
+                    <div class="logo-container">
+                        <img class="imagemLogo" src="Assets/Images/Index/Logo_Principal.png" alt="Logo_Principal">
+                    </div>
+                    <button type="button" onclick="toggleNav()" class="buttonlate" aria-label="Toggle Menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </header>
             <div class="container-imagem">
                 <div class="container-crono">
                     <!-- Imagem esta no CSS -->
-                    <button class="buttonBanner">Cronograma</button>
+                    <!-- <a href="Cronograma.html" class="buttonBanner">Cronograma</a> -->
                 </div>
             </div>
 
@@ -36,15 +41,18 @@
         <div class="container_all_Semestre">
             <div class="container_Semestre">
                 <div class="title_Semestre">
-                    <h1 class="title_h1_Semmestre">1° Semestre</h1>
+                    <!-- <h1 class="title_h1_Semmestre">1° Semestre</h1> -->
                 </div>
                 <div class="container-consulta">
                     <div class="lista-destaque">
+                        <a href="#"><img class="Image_Banners" src="Assets/Images/Index/Materia_Radiologia.png"
+                                alt=""></a>
                         <a href="#"><img class="Image_Banners" src="Assets/Images/Index/Materia_Dentistica.png"
                                 alt=""></a>
                         <a href="#"><img class="Image_Banners" src="Assets/Images/Index/Materia_Periodontia.png"
                                 alt=""></a>
                         <a href="#"><img class="Image_Banners" src="Assets/Images/Index/Materia_Endo.png" alt=""></a>
+
                     </div>
                 </div>
             </div>
@@ -53,7 +61,7 @@
 
             <div class="container_Semestre">
                 <div class="title_Semestre">
-                    <h1 class="title_h1_Semmestre">2° Semestre</h1>
+                    <!-- <h1 class="title_h1_Semmestre">2° Semestre</h1> -->
                 </div>
                 <div class="container-consulta">
                     <div class="lista-destaque">
@@ -69,6 +77,35 @@
 
         </div>
     </div>
+
+    <!-- Menu Lateral Direito -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Informação 1</a>
+        <a href="#">Informação 2</a>
+        <a href="#">Informação 3</a>
+    </div>
+
+    <script>
+        function toggleNav() {
+            var sideNav = document.getElementById("mySidenav");
+            if (sideNav.style.width === "300px") {
+                closeNav();
+            } else {
+                openNav();
+            }
+        }
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "300px";
+            document.getElementById("main").style.marginLeft = "300px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
 </body>
 
 </html>
